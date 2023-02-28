@@ -25,7 +25,6 @@ body, html{
 }
 
 .header-text{
-    
     color: white;
     font-size: 1em;
     padding: 0 2.5em;
@@ -48,7 +47,9 @@ body, html{
 }
 
 .btn:hover{
-    background:#2e2e2ca2
+    background:#2e2e2ca2;
+    transition:1s;
+    cursor: pointer;
 }
 
 .sec-text{
@@ -81,6 +82,11 @@ body, html{
 .cards-content{
     background-color: white;
     padding: 1.2em;
+}
+
+.cards-content p{
+    text-align: center;
+    padding: 0.5em;
 }
 
 .cards-img{
@@ -135,4 +141,65 @@ body, html{
 
 .footer a{
     text-decoration: none;
+}
+
+.footer a:visited{
+    color: blue;
+}
+
+
+@media screen and (min-width: 1024px){
+    .header-title{
+        padding: 0;
+        color: white;
+        font-size: 2.5em;
+        margin: 0;
+    }
+
+    .header-text{
+        color: white;
+        font-size: 1.3em;
+        padding: 0 2.5em;
+        font-weight: bold;
+    }
+    
+    .btn{
+        border: 1px solid white;
+        border-radius: 2px;
+        background:#2E2E2C;
+        padding: 1.2em;
+        font-size: 1em;
+        margin: 1em;
+        color: white;
+        text-transform: uppercase;
+    }
+    
+  .cards{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 2em;
+        justify-content: space-around;       
+    }
+
+    .sec-h2{
+        margin-bottom: 2em;
+    }
+
+    .sec-about{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .about{
+        width: 50%;
+    }
+
+    .contact{
+        width: 50%;
+    }
+
+    .footer{
+        display: flex;
+        justify-content: space-around;
+    }
 }
